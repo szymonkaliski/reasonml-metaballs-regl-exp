@@ -1,14 +1,14 @@
 /* settings */
 
-let numPoints = 200;
+let numPoints = 400;
 
 let modPos = 20.;
 let modTime = 0.9;
 let modVel = 0.25;
 let modDir = 0.2;
 let modSpeed = 1.00;
-let modLockDie = 0.01;
-let modDist = 100.;
+let modLockDie = 0.03;
+let modDist = 180.;
 let modLockGrow = 0.02;
 let stickChance = 0.09;
 
@@ -17,13 +17,13 @@ let warmupCount = 120;
 /* main app state */
 
 type windowT = {
-  mutable width: int,
-  mutable height: int
+  mutable width : int,
+  mutable height : int
 };
 
 type vecT = {
-  mutable x: float,
-  mutable y: float
+  mutable x : float,
+  mutable y : float
 };
 
 type pointT = {
