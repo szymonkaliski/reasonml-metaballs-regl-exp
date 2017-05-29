@@ -54,7 +54,7 @@ let canvas = Document.createElement "canvas";
 
 Document.appendChild canvas;
 
-let setCanvasSize _ => {
+let setCanvasSize () => {
   let width = Document.getWidth Document.window;
   let height = Document.getHeight Document.window;
 

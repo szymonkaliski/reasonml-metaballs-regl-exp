@@ -4,7 +4,7 @@ let window: element = [%bs.raw "window"];
 
 external createElement : string => element = "document.createElement" [@@bs.val];
 external appendChild : element => element = "document.body.appendChild" [@@bs.val];
-external addEventListener : element => string => (Events.event => unit) => unit = "addEventListener" [@@bs.send];
+external addEventListener : element => string => (unit => unit) => unit = "addEventListener" [@@bs.send];
 
 external getWidth : element => int = "innerWidth" [@@bs.get];
 external getHeight : element => int = "innerHeight" [@@bs.get];
